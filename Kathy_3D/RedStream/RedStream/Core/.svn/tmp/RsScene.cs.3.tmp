@@ -1,0 +1,112 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.GamerServices;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
+//using StillDesign.PhysX;
+namespace RedStream
+{
+    class RsScene
+    {
+        public RsScene()
+        {
+            Init();
+        }
+        public RsCamera Camera;
+        public ParticleSystem ExplosionSystem;
+        public void Init()
+        {
+            ExplosionSystem = new ExplosionParticleSystem(RedStream.Game, RedStream.Game.Content);
+            RsCamera.Desc cdesc = new RsCamera.Desc();
+            cdesc.Pos = new Vector3(0.0f, 0, 100.0f);
+            cdesc.FarViewPlane = 1500;
+            cdesc.AspectRatio = RedStream.Graphics.graphics.GraphicsDevice.Viewport.AspectRatio;
+            Camera = new RsCamera(cdesc);
+
+            RsMaterialDesc mdesc= new RsMaterialDesc();
+            mdesc.DiffuseMapName = "BlueMarbleSlabs_Diffuse";
+            mdesc.NormalMapName = "BlueMarbleSlabs_Normal";
+            mdesc.Color = new Vector4(1, 1, 1, 1);
+            mdesc.Shininess = 1000;
+            mdesc.DiffuseFactor = 1;
+            mdesc.FresnelBias = 0;
+            mdesc.FresnelScale = .9f;
+            mdesc.FresnelPower = 2;
+            mdesc.Refractivity = new Vector3(0.999f, 0.999f, 0.999f);
+            mdesc.Bumpiness = 1;
+            
+            RsGyroscope.Desc gdesc = new RsGyroscope.Desc();
+            gdesc.ModelName = "Gyro";
+            gdesc.Pos = new Vector3(0, 0, 0);
+            gdesc.Scale = new Vector3(1, 1, 1);
+            gdesc.FaceVector = Vector3.Up;
+            gdesc.MaterialDesc = mdesc;
+            RedStream.Input.Gyroscope = new RsGyroscope(gdesc);
+
+            RsActor.Desc pdesc = new RsActor.Desc();
+            pdesc.MaterialDesc = mdesc;
+            pdesc.MaterialDesc.DiffuseFactor = 1;
+            pdesc.MaterialDesc.Color = new Vector4(1);
+            pdesc.ModelName = "Sphere";
+            pdesc.MaterialDesc.Cull = true;
+            pdesc.Pos = new Vector3();
+            pdesc.Scale = new Vector3(10);
+            new RsPlanet(pdesc);
+
+            pdesc.ModelName = "SkySphere";
+            pdesc.Pos = new Vector3(0, 0, 0);
+            pdesc.Scale = new Vector3(1);
+            pdesc.MaterialDesc.DiffuseMapName = "EarthExplosion";
+            pdesc.MaterialDesc.Cull = pdesc.MaterialDesc.CastsShadows = pdesc.MaterialDesc.Lit = false;
+            //Load(new RsActor(pdesc));
+            new RsActor(pdesc);
+
+            RsLight.Desc ldesc = new RsLight.Desc();
+            ldesc.OrbitVel = new Vector3(0, 1, 0);
+            ldesc.Pos = new Vector3(10, 30, 500);
+            ldesc.At = Vector3.Zero;
+            ldesc.Color = new Vector4(0.5f, .5f, .5f, 1);
+            ldesc.Type = RsLight.Type.Spot;
+            //ldesc.Attenuation = new Vector3(0, 0, 0.00004f);
+            //Load(new RsLight(ldesc));
+
+            ldesc = new RsLight.Desc();
+            ldesc.OrbitVel = new Vector3(0, 1.5f, 0);
+            ldesc.Pos = new Vector3(0, 20, 50);
+            ldesc.At = Vector3.Zero;
+            ldesc.Color = new Vector4(0, 1, 0, 1);
+            ldesc.Type = RsLight.Type.Point;
+            ldesc.Attenuation = new Vector3(0, 0, 0.00004f);
+            //Load(new RsLight(ldesc));
+            //new RsLight(ldesc);
+            ldesc = new RsLight.Desc();
+            ldesc.OrbitVel = new Vector3(0, .5f, 0);
+            ldesc.Pos = new Vector3(0, 20, 50);
+            ldesc.At = Vector3.Zero;
+            ldesc.Color = new Vector4(1, 0, 0, 1);
+            ldesc.Type = RsLight.Type.Point;
+            ldesc.Attenuation = new Vector3(0, 0, 0.00004f);
+            //Load(new RsLight(ldesc));
+            //new RsLight(ldesc);
+            ldesc = new RsLight.Desc();
+            //ldesc.OrbitVel = new Vector3(0, 0, 0);
+            ldesc.Pos = new Vector3(50, 50, 0);
+            ldesc.At = Vector3.Zero;
+            ldesc.Color = new Vector4(1f, 1f, 1f, 1);
+            ldesc.Type = RsLight.Type.Spot;
+            ldesc.Attenuation = new Vector3(0, 0, 0.00004f);
+            //Load(new RsLight(ldesc));
+            new RsLight(ldesc);
+        }
+        public void Load(RsGameObject gameObject)
+        {
+            RedStream.AddComponent(gameObject);
+        }
+    }
+}

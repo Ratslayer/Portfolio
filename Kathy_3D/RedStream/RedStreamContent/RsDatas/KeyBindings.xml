@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="RedStream.RsKeyBindings">
+    <ExitKey>Escape</ExitKey>
+    <SetWireframe>D1</SetWireframe>
+    <ActivateParticles>Q</ActivateParticles>
+    <VisualizeBounds>D0</VisualizeBounds>
+    <IncreaseBloomFactor>OemPlus</IncreaseBloomFactor>
+    <DecreaseBloomFactor>OemMinus</DecreaseBloomFactor>
+    <SetDiffuseMap>D2</SetDiffuseMap>
+    <SetLightMap>D3</SetLightMap>
+    <SetSpecularMap>D4</SetSpecularMap>
+    <SetDeferredMap>D5</SetDeferredMap>
+    <SetLightPassedMap>D6</SetLightPassedMap>
+    <SetDownsampledMap>D7</SetDownsampledMap>
+    <SetBlurredMap>D8</SetBlurredMap>
+    <SetBloomedMap>D9</SetBloomedMap>
+    <SelectNextRing>Up</SelectNextRing>
+    <SelectPreviousRing>Down</SelectPreviousRing>
+    <RotateRingRight>Right</RotateRingRight>
+    <RotateRingLeft>Left</RotateRingLeft>
+    <ToggleGyro>Space</ToggleGyro>
+    <DrawScene>Tab</DrawScene>
+    <CameraMove>LeftButton</CameraMove>
+    <CameraZoom>MiddleButton</CameraZoom>
+    <CreateShip>R</CreateShip>
+  </Asset>
+</XnaContent>

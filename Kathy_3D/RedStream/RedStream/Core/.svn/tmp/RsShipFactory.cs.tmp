@@ -1,0 +1,49 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.GamerServices;
+using Microsoft.Xna.Framework.Graphics;
+
+namespace RedStream
+{
+    public static class RsShipFactory
+    {
+<<<<<<< .mine
+=======
+
+
+        static RsActor.Desc ShipDesc;
+        static RsMaterialDesc Mdesc;
+
+        public static RsActor.Desc SetShipDesc
+        {
+            set { ShipDesc = value; }
+        }
+
+        public static RsMaterialDesc SetMaterial
+        {
+            set { Mdesc = value; }
+        }
+
+>>>>>>> .r59
+        public static void CreateShip()
+        {
+            RsMaterial.Desc mdesc = new RsMaterial.Desc();
+            mdesc.DiffuseMapName = "BlueMarbleSlabs_Diffuse";
+            mdesc.NormalMapName = "BlueMarbleSlabs_Normal";
+
+            RsActor.Desc ShipDesc = new RsActor.Desc();
+            ShipDesc.ModelName = "Ship";
+            ShipDesc.MaterialDesc = mdesc;
+            ShipDesc.Scale = new Vector3(1);
+
+            RsShip test1 = new RsShip(ShipDesc, "TestShip");
+            test1.Spawn(new Random());
+        }
+    }
+}

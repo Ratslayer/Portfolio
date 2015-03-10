@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="RedStream.RsWeaponData">
+    <Desc>LaserGun</Desc>
+    <Name>Point Defense Tower</Name>
+    <Description>Destroys incoming projectiles - Does not target ships</Description>
+    <Sound>Laser</Sound>
+    <DamageDealt>10</DamageDealt>
+    <RateOfFire>0.5</RateOfFire>
+    <BulletCount>-1</BulletCount>
+    <Type>Beam</Type>
+    <BulletSpeed>-1</BulletSpeed>
+    <Range>30</Range>
+    <FOV>45</FOV>
+    <BeamColor>1 0 0 1</BeamColor>
+    <BeamLifeTime>100</BeamLifeTime>
+  </Asset>
+</XnaContent>

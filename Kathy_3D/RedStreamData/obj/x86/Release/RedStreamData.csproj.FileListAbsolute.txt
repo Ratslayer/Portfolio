@@ -1,0 +1,12 @@
+C:\Users\Ratslayer\Documents\Visual Studio 2010\Projects\red-stream\RedStreamData\bin\x86\Release\RedStreamData.dll
+C:\Users\Ratslayer\Documents\Visual Studio 2010\Projects\red-stream\RedStreamData\bin\x86\Release\RedStreamData.pdb
+C:\Users\Ratslayer\Documents\Visual Studio 2010\Projects\red-stream\RedStreamData\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Ratslayer\Documents\Visual Studio 2010\Projects\red-stream\RedStreamData\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Ratslayer\Documents\Visual Studio 2010\Projects\red-stream\RedStreamData\obj\x86\Release\RedStreamData.dll
+C:\Users\Ratslayer\Documents\Visual Studio 2010\Projects\red-stream\RedStreamData\obj\x86\Release\RedStreamData.pdb
+C:\Users\Ratslayer\Documents\Arsenic\Projects\red-stream\RedStreamData\bin\x86\Release\RedStreamData.dll
+C:\Users\Ratslayer\Documents\Arsenic\Projects\red-stream\RedStreamData\bin\x86\Release\RedStreamData.pdb
+C:\Users\Ratslayer\Documents\Arsenic\Projects\red-stream\RedStreamData\obj\x86\Release\RedStreamData.csprojResolveAssemblyReference.cache
+C:\Users\Ratslayer\Documents\Arsenic\Projects\red-stream\RedStreamData\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Ratslayer\Documents\Arsenic\Projects\red-stream\RedStreamData\obj\x86\Release\RedStreamData.dll
+C:\Users\Ratslayer\Documents\Arsenic\Projects\red-stream\RedStreamData\obj\x86\Release\RedStreamData.pdb

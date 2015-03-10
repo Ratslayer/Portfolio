@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="RedStream.RsWeaponData">
+    <Desc>ShotGun</Desc>
+    <Name>Shrapnel Launcher</Name>
+    <Description>Fires a spray of projectiles - Area of effect</Description>
+    <Sound>Shotgun</Sound>
+    <DamageDealt>5</DamageDealt>
+    <RateOfFire>3</RateOfFire>
+    <BulletCount>-1</BulletCount>
+    <Type>Projectile</Type>
+    <BulletSpeed>20</BulletSpeed>
+    <Range>100</Range>
+    <FOV>30</FOV>
+    <BeamColor>0 0 0 0</BeamColor>
+    <BeamLifeTime>0</BeamLifeTime>
+  </Asset>
+</XnaContent>

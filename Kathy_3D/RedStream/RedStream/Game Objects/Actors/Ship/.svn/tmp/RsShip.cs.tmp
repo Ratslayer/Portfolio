@@ -1,0 +1,147 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.GamerServices;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
+namespace RedStream
+{
+    public partial class RsShip : RsActor
+    {
+        protected RsShipData Attributes;
+        protected RsUpgradeData ActiveUpgrade;
+        protected RsWeapon ActiveWeapon;
+
+        private float CurrentSpeed;
+        private float Speed = .1f;
+        private Vector3 Direction;
+
+        private float MinSpawnRadius = 15;
+        private float MaxSpawnRadius = 30;
+
+        TimeSpan FiringCoolDown = TimeSpan.FromSeconds(2);
+        TimeSpan Timer = TimeSpan.Zero;
+
+        public RsShip(RsActor.Desc desc, String shipName)
+            : base(desc)
+        {
+            RsMaterialDesc mdesc = new RsMaterialDesc();
+            mdesc.Color = new Vector4(); // FIXME: Ship color to be loaded;
+            mdesc.DiffuseMapName = "";   // FIXME: Ship diffuse map name
+            mdesc.NormalMapName = "";    // FIXME: Ship map name
+
+            Attributes = (RsShipData)RedStream.Content.GetObjectAttributes("Ships\\" + shipName);
+            ActiveUpgrade = (RsUpgradeData)RedStream.Content.GetObjectAttributes("Upgrades\\" + Attributes.InitialUpgrade);
+            ActiveWeapon = new RsWeapon(new RsActor.Desc(), this, ActiveUpgrade.Weapon);
+
+            System.Diagnostics.Debug.Print(ActiveWeapon.Attributes.RateOfFire.ToString());
+
+           
+        }
+
+        public void Spawn(Vector3 pos)
+        {
+            Pos = pos;
+            
+           // Straight();
+        }
+        
+        public void Spawn(Random random)
+        {
+            float X = (float)(MinSpawnRadius + random.NextDouble() * (MaxSpawnRadius - MinSpawnRadius));
+            float Y = (float)(MinSpawnRadius + random.NextDouble() * (MaxSpawnRadius - MinSpawnRadius));
+            float Z = (float)(MinSpawnRadius + random.NextDouble() * (MaxSpawnRadius - MinSpawnRadius));
+
+
+            Spawn(new Vector3(-X, -Y, -Z));
+        }
+
+       
+
+        private Vector3 GetVelocity(Vector3 direction)
+        {
+            direction.Normalize();
+            return direction * Speed;
+
+        }
+
+        private void Stop()
+        {
+            CurrentSpeed = 0;
+        }
+        private void Move()
+        {
+            CurrentSpeed = Speed;
+        }
+
+        private void Straight()
+        {
+            Direction = Vector3.Zero - Pos;
+            OrientToDirection(Direction);
+        }
+
+
+        private void Orbit()
+        {
+            Vector3 someV;
+            if ((Vector3.Zero - Pos).X == 0.0f)
+            {
+                someV = new Vector3(1, 0, 0);
+            }
+            else someV = new Vector3(0, 1, 0);
+
+            Direction = Vector3.Cross(Vector3.Zero - Pos, someV);
+        }
+
+        public override void Update(GameTime gameTime)
+        {
+
+            Orbit();
+
+            Timer -= gameTime.ElapsedGameTime;
+
+            if (Timer <= TimeSpan.Zero)
+            {
+                ShootPlanet();
+                Timer = FiringCoolDown;
+            }
+            
+            Vel = GetVelocity(Direction);
+            
+           
+
+            base.Update(gameTime);
+        }
+
+        public void ShootPlanet()
+        {
+            RsProjectile.Desc pDesc = new RsProjectile.Desc();
+            pDesc.ModelName = "Sphere";
+            
+            pDesc.Scale = new Vector3(.5f, .5f, .5f);
+
+            new RsProjectile(pDesc, this.Pos);
+           
+        }
+
+        public override void ReactToCollision(RsGameObject obj)
+        {
+            if (obj is RsPlanet)
+            {
+                Die();
+            }
+            base.ReactToCollision(obj);
+        }
+
+        public override void Die()
+        {
+            RedStream.CreateExplosion(5, Pos);
+            base.Die();
+        }
+    }
+}

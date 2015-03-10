@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="RedStream.RsMaterialDesc">
+    <DiffuseMapName></DiffuseMapName>
+    <NormalMapName></NormalMapName>
+    <SpecularMapName></SpecularMapName>
+    <Shininess>100</Shininess>
+    <Specular>0</Specular>
+    <FresnelBias>1</FresnelBias>
+    <FresnelScale>0</FresnelScale>
+    <FresnelPower>0</FresnelPower>
+    <DiffuseFactor>1</DiffuseFactor>
+    <Bumpiness>1</Bumpiness>
+    <Cull>true</Cull>
+    <Lit>false</Lit>
+    <CastsShadows>false</CastsShadows>
+    <Colored>true</Colored>
+    <Emissive>true</Emissive>
+    <Color>0 1 0 1</Color>
+    <Refractivity>1 1 1</Refractivity>
+  </Asset>
+</XnaContent>

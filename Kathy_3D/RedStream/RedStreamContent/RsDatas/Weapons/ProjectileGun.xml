@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="RedStream.RsWeaponData">
+    <Desc>ProjectileGun</Desc>
+    <Name>Flak Cannon</Name>
+    <Description>Fires projectiles - Fast rate of fire</Description>
+    <Sound>ShortLaser</Sound>
+    <DamageDealt>25</DamageDealt>
+    <RateOfFire>1</RateOfFire>
+    <BulletCount>-1</BulletCount>
+    <Type>Projectile</Type>
+    <BulletSpeed>20</BulletSpeed>
+    <Range>100</Range>
+    <FOV>30</FOV>
+    <BeamColor>0 0 0 0</BeamColor>
+    <BeamLifeTime>0</BeamLifeTime>
+  </Asset>
+</XnaContent>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="RedStream.RsActorDesc">
+    <Name>Planet</Name>
+    <ModelName>Planet</ModelName>
+    <MaterialName>Planet</MaterialName>
+    <Scale>
+      0.006 0.006 0.006
+    </Scale>
+    <FaceVector>
+      0 0 1
+    </FaceVector>
+    <UpVector>
+      0 1 0
+    </UpVector>
+  </Asset>
+</XnaContent>

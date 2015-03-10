@@ -1,0 +1,66 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.GamerServices;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
+namespace RedStream
+{
+    class RsScene
+    {
+        public RsScene()
+        {
+        }
+        public RsCamera Camera;
+        public ParticleSystem ExplosionSystem;
+        public void Init()
+        {
+            ExplosionSystem = new ExplosionParticleSystem(RedStream.Game, RedStream.Game.Content);
+<<<<<<< .mine
+            //RsGameInfo.Init();
+            Kathy.GameInfo.Init();
+=======
+            RsCamera.Desc cdesc = new RsCamera.Desc();
+            cdesc.Pos = new Vector3(0.0f, 0, 100.0f);
+            cdesc.FarViewPlane = 1500;
+            cdesc.AspectRatio = RedStream.Graphics.graphics.GraphicsDevice.Viewport.AspectRatio;
+            Camera = new RsCamera(cdesc);
+
+            //gyroscope
+            DescDataPair<RsGyroscopeData> gyroPair = new DescDataPair<RsGyroscopeData>("World\\Gyroscope");
+            RsGameInfo.Gyroscope = new RsGyroscope(gyroPair.Desc, gyroPair.Data);
+
+            //planet
+            DescDataPair<RsPlanetData> pair = new DescDataPair<RsPlanetData>("Planets\\MainPlanet");
+            pair.Desc.Pos = Vector3.Zero;
+            RsGameInfo.Planet = new RsPlanet(pair.Desc, pair.Data);
+
+            //skysphere
+            RsActor.Desc pdesc = new RsActor.Desc("SkySphere");
+            new RsActor(pdesc);
+
+            //the spot light
+            RsLight.Desc ldesc = new RsLight.Desc("Spotlight");
+            ldesc.Pos = new Vector3(0, 100, 0);
+
+            new RsLight(ldesc);
+
+            //add tower descs
+            RsGameInfo.TowerData.Add(new DescDataPair<RsTowerData>("Buildings\\RailgunTower"));
+            RsGameInfo.TowerData.Add(new DescDataPair<RsTowerData>("Buildings\\PDT"));
+            RsGameInfo.TowerData.Add(new DescDataPair<RsTowerData>("Buildings\\LaserTower"));
+            RsGameInfo.TowerData.Add(new DescDataPair<RsTowerData>("Buildings\\MissileTower"));
+            
+>>>>>>> .r134
+        }
+        public static void CreateExplosion(int numParticles, Vector3 pos, float scale, Vector3 vel)
+        {
+            RedStream.Scene.ExplosionSystem.AddParticles(numParticles, pos, scale, vel);
+        }
+    }
+}

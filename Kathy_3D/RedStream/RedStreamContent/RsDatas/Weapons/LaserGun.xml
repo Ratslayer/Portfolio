@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="RedStream.RsWeaponData">
+    <Desc>LaserGun</Desc>
+    <Name>Laser Beam</Name>
+    <Description>Instantaneous beam of energy - Never misses</Description>
+    <Sound>Laser</Sound>
+    <DamageDealt>35</DamageDealt>
+    <RateOfFire>1</RateOfFire>
+    <BulletCount>-1</BulletCount>
+    <Type>Beam</Type>
+    <BulletSpeed>-1</BulletSpeed>
+    <Range>150</Range>
+    <FOV>55</FOV>
+    <BeamColor>0 1 0 1</BeamColor>
+    <BeamLifeTime>500</BeamLifeTime>
+  </Asset>
+</XnaContent>

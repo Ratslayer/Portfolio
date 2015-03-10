@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="RedStream.RsWeaponData">
+    <Desc>LaserGun</Desc>
+    <Name>Railgun</Name>
+    <Description>Fires a projectile at high power - Slow rate of fire</Description>
+    <Sound>Railgun</Sound>
+    <DamageDealt>100</DamageDealt>
+    <RateOfFire>7</RateOfFire>
+    <BulletCount>-1</BulletCount>
+    <Type>Projectile</Type>
+    <BulletSpeed>100</BulletSpeed>
+    <Range>150</Range>
+    <FOV>30</FOV>
+    <BeamColor>1 1 0 1</BeamColor>
+    <BeamLifeTime>1600</BeamLifeTime>
+  </Asset>
+</XnaContent>

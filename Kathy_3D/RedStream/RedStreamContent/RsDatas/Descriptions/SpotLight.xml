@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="RedStream.RsLightDesc">
+    <Color>1 1 1 1</Color>
+    <Attenuation>0 0 0.00004</Attenuation>
+    <Direction>-50 -50 0</Direction>
+    <At>0 0 0</At>
+    <Focus>0 0 0</Focus>
+    <OrbitVel>0 0 0</OrbitVel>
+    <KeepFocus>true</KeepFocus>
+    <Type>Spot</Type>
+    <Radius>1000</Radius>  
+</Asset>
+</XnaContent>

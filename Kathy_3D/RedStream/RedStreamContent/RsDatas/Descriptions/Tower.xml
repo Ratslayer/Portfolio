@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="RedStream.RsActorDesc">
+    <Name>Basic Tower</Name>
+    <ModelName>Ship</ModelName>
+    <MaterialName>BlueMarbleSlabs</MaterialName>
+    <Scale>
+      1 1 1
+    </Scale>
+    <FaceVector>
+      0 0 1
+    </FaceVector>
+    <UpVector>
+      0 1 0
+    </UpVector>
+  </Asset>
+</XnaContent>

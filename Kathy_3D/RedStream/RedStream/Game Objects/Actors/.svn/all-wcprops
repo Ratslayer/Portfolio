@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/207/trunk/RedStream/RedStream/Game%20Objects/Actors
+END
+RsActor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/120/trunk/RedStream/RedStream/Game%20Objects/Actors/RsActor.cs
+END
+RsDamageableActor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/120/trunk/RedStream/RedStream/Game%20Objects/Actors/RsDamageableActor.cs
+END
+RsDescDataPair.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/120/trunk/RedStream/RedStream/Game%20Objects/Actors/RsDescDataPair.cs
+END

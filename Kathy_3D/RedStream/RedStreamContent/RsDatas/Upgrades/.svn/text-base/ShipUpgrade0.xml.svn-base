@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="RedStream.RsUpgradeData">
+    <Name>Ship Level I</Name>
+    <HpModifier>0.8</HpModifier>
+    <ShieldModifier>1.0</ShieldModifier>
+    <DamageModifier>1.0</DamageModifier>
+    <SpeedModifier>0.4</SpeedModifier>
+    <Weapon>ProjectileGun</Weapon>
+    <Cost>0</Cost>
+  </Asset>
+</XnaContent>

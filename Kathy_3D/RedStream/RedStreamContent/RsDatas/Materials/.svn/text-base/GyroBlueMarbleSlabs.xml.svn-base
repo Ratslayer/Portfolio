@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="RedStream.RsMaterialDesc">
+    <DiffuseMapName>BlueMarbleSlabs_Diffuse</DiffuseMapName>
+    <NormalMapName>BlueMarbleSlabs_Normal</NormalMapName>
+    <SpecularMapName></SpecularMapName>
+    <Shininess>1000</Shininess>
+    <Specular>1</Specular>
+    <FresnelBias>0</FresnelBias>
+    <FresnelScale>0.9</FresnelScale>
+    <FresnelPower>2</FresnelPower>
+    <DiffuseFactor>1</DiffuseFactor>
+    <Bumpiness>1</Bumpiness>
+    <Cull>true</Cull>
+    <Lit>true</Lit>
+    <CastsShadows>true</CastsShadows>
+    <Colored>true</Colored>
+    <Emissive>false</Emissive>
+    <Color>1 1 1 1</Color>
+    <Refractivity>0.999 0.999 0.999</Refractivity>
+  </Asset>
+</XnaContent>

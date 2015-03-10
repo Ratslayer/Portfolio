@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="RedStream.RsTowerData">
+    <!-- RsActorData -->
+    <Desc>Tower</Desc>
+    <Name>Laser Beam</Name>
+    <!-- If we implement destructbile towers RsDamageableData 
+    <Health>150</Health> -->
+    <!-- RsTowerData -->
+    <InitialUpgrade>TowerUpgrade1</InitialUpgrade>
+    <!-- If we implement destructbile towers
+      <Shield>500</Shield>
+    !-->
+    <Cost>500</Cost>
+    <!-- To be added later, adding bonuses to nearby towers
+    <ProximityBonus>xx</ProximityBonus>
+    -->
+    <TowerType>Offensive</TowerType>
+    <TechLevel>2</TechLevel>
+  </Asset>
+</XnaContent>

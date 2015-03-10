@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="RedStream.RsWeaponData">
+    <Desc>ProjectileGun</Desc>
+    <Name>Missile Battery</Name>
+    <Description>Slow moving homing missiles - Never misses</Description>
+    <Sound>Boomshocka</Sound>
+    <DamageDealt>50</DamageDealt>
+    <RateOfFire>5</RateOfFire>
+    <BulletCount>-1</BulletCount>
+    <Type>Missile</Type>
+    <BulletSpeed>15</BulletSpeed>
+    <Range>200</Range>
+    <FOV>55</FOV>
+    <BeamColor>0 0 0 0</BeamColor>
+    <BeamLifeTime>0</BeamLifeTime>
+  </Asset>
+</XnaContent>

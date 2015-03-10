@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="RedStream.RsWaveData">
+    <ShipCount>16 12 10</ShipCount>
+    <SpawnRate>2</SpawnRate>
+    <RingCount>3</RingCount>
+    <TechLevel>5</TechLevel>
+    <ShipUpgrade>ShipUpgrade4</ShipUpgrade>
+    <Boss>Boss1</Boss>
+  </Asset>
+</XnaContent>

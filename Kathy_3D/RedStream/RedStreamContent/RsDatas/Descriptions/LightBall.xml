@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="RedStream.RsActorDesc">
+    <Name>Light Ball</Name>
+    <ModelName>Sphere</ModelName>
+    <MaterialName>DefaultMaterial</MaterialName>
+    <Scale>
+      3 3 3
+    </Scale>
+    <FaceVector>
+      0 0 1
+    </FaceVector>
+    <UpVector>
+      0 1 0
+    </UpVector>
+  </Asset>
+</XnaContent>

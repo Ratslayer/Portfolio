@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="RedStream.RsActorDesc">
+    <Name>ProjectileGun</Name>
+    <ModelName>Sphere</ModelName>
+    <MaterialName>DefaultMaterial</MaterialName>
+    <Scale>1 1 1</Scale>
+    <FaceVector>0 0 0</FaceVector>
+    <UpVector>
+      0 1 0
+    </UpVector>
+  </Asset>
+</XnaContent>

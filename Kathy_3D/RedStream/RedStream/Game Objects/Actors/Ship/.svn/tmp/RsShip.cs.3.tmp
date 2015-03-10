@@ -1,0 +1,139 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.GamerServices;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
+namespace RedStream
+{
+    public partial class RsShip : RsActor
+    {
+        protected RsShipData Attributes;
+        protected RsUpgradeData ActiveUpgrade;
+        protected RsWeapon ActiveWeapon;
+
+        private float CurrentSpeed;
+        
+        private Vector3 Direction;
+        public Vector3 OrbitAxis;
+
+        TimeSpan FiringCoolDown = TimeSpan.FromSeconds(2);
+        TimeSpan Timer = TimeSpan.Zero;
+
+        public RsShip(RsActor.Desc desc, String shipName)
+            : base(desc)
+        {
+            Attributes = (RsShipData)RedStream.Content.GetObjectAttributes("Ships\\" + shipName);
+            ActiveUpgrade = (RsUpgradeData)RedStream.Content.GetObjectAttributes("Upgrades\\" + Attributes.InitialUpgrade);
+            RsActor.Desc weaponDesc = new RsActor.Desc(ActiveUpgrade.Weapon);
+            ActiveWeapon = new RsWeapon(weaponDesc, this);
+
+            System.Diagnostics.Debug.Print(ActiveWeapon.Attributes.RateOfFire.ToString());
+
+
+            if ((RsShipData.Mode)Attributes.ShipType == RsShipData.Mode.Straight || (RsShipData.Mode)Attributes.ShipType == RsShipData.Mode.HitAndRun) Straight();
+
+        }
+
+        private Vector3 GetVelocity(Vector3 direction)
+        {
+            direction.Normalize();
+            return direction * Attributes.Speed;
+
+        }
+
+        private void Stop()
+        {
+            CurrentSpeed = 0;
+        }
+        private void Move()
+        {
+            CurrentSpeed = Attributes.Speed;
+        }
+
+        private void Straight()
+        {
+            Direction = Vector3.Zero - Pos;
+            FaceDirection(Direction);
+        }
+
+
+        private void Orbit()
+        {
+            FacePoint(Vector3.Zero);
+            Direction = Vector3.Cross(Forward, OrbitAxis);
+        }
+
+        public override void Update(GameTime gameTime)
+        {
+            if ((RsShipData.Mode)Attributes.ShipType == RsShipData.Mode.Orbit)
+            {
+                Orbit();
+            }
+
+            if ((RsShipData.Mode)Attributes.ShipType == RsShipData.Mode.HitAndRun && (Pos.Length() <= 20))
+            {
+                Direction = -Direction;
+                OrientToDirection(Direction);
+            }
+
+            if ((RsShipData.Mode)Attributes.ShipType != RsShipData.Mode.Straight)
+            {
+                Timer -= gameTime.ElapsedGameTime;
+
+                if (Timer <= TimeSpan.Zero)
+                {
+                    ShootPlanet();
+                    Timer = FiringCoolDown;
+                }
+            }
+
+<<<<<<< .mine
+            if ((Mode)Attributes.ShipType == Mode.HitAndRun && (Pos.Length() <= 20))
+            {
+                Direction = -Direction;
+                FaceDirection(Direction);
+            }
+
+=======
+>>>>>>> .r76
+            Vel = GetVelocity(Direction);
+
+            
+
+            base.Update(gameTime);
+        }
+
+        public void ShootPlanet()
+        {
+            RsProjectile.Desc pDesc = new RsProjectile.Desc();
+            pDesc.ModelName = "Sphere";
+            
+            pDesc.Scale = new Vector3(.5f, .5f, .5f);
+
+            new RsProjectile(pDesc, this.Pos);
+           
+        }
+
+        public override void ReactToCollision(RsGameObject obj)
+        {
+            if (obj is RsPlanet)
+            {
+                Pos = RsPhysics.GetCollisionPoint(obj, this);
+                Die();
+            }
+            base.ReactToCollision(obj);
+        }
+
+        public override void Die()
+        {
+            RedStream.CreateExplosion(5, Pos, 0.4f);
+            base.Die();
+        }
+    }
+}

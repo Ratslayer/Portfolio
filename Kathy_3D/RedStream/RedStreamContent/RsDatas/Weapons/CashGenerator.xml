@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="RedStream.RsWeaponData">
+    <Desc>LaserGun</Desc>
+    <Name>Factory</Name>
+    <Description>Generates money</Description>
+    <Sound>Ka-ching</Sound>
+    <DamageDealt>5</DamageDealt>
+    <RateOfFire>1</RateOfFire>
+    <BulletCount>-1</BulletCount>
+    <Type>CashGenerator</Type>
+    <BulletSpeed>0</BulletSpeed>
+    <Range>1</Range>
+    <FOV>45</FOV>
+    <BeamColor>0 0 0 0</BeamColor>
+    <BeamLifeTime>0</BeamLifeTime>
+  </Asset>
+</XnaContent>

@@ -1,0 +1,55 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.GamerServices;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
+
+namespace RedStream
+{
+    public class RsInstructionsHud : RsIHud
+    {
+        private SpriteFont font;
+
+        private Texture2D mainMenuTexture;
+        private Texture2D blackBackgroundTexture;
+        private Rectangle viewportRect;
+
+        public RsInstructionsHud()
+        {
+            font = RedStream.Content.GetFont("Courier New");
+            //main menu background
+            mainMenuTexture = RedStream.Content.GetTexture("gyroMenu");
+            blackBackgroundTexture = RedStream.Content.GetTexture("blackBackground");
+            //set a viewport variable
+            viewportRect = new Rectangle(0, 0,
+                RedStream.Graphics.graphics.GraphicsDevice.Viewport.Width,
+                RedStream.Graphics.graphics.GraphicsDevice.Viewport.Height);
+        }
+
+        public void Draw(SpriteBatch batch)
+        {
+            Vector2 curPos = new Vector2(125, 125);
+            batch.Begin();
+            batch.Draw(mainMenuTexture, viewportRect, Color.White);
+            batch.Draw(blackBackgroundTexture, new Vector2(100,100), Color.White);
+            batch.DrawString(font, "Instructions:", curPos, Color.Red); curPos.Y += 25;
+            batch.DrawString(font, "Your planet is under attack!\nBuild towers on your defensive gyroscope platform\nSelect ring with Up/Down keys\nRotate ring with Left/Right keys to aim", curPos, Color.Red); curPos.Y += 135;
+            batch.DrawString(font, "Your planet's sheilds are at the top of your screen\nIf it becomes empty, you die a horrible fiery death.\nDon't do that, Survive!", curPos, Color.Red); curPos.Y += 25;
+            batch.DrawString(font, "Press Enter to return!", new Vector2(250,30), Color.Red);
+            batch.End();
+        }
+        public void ProcessInput()
+        {
+            if (RsInput.Tapped(Keys.Enter))
+                RsStateManager.Pop();
+            if (RsInput.Down(RsInput.KeyBindings.ExitKey))
+                RedStream.Game.Exit();   
+        }
+    }
+}

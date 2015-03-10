@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="RedStream.RsShipData">
+    <!-- RsActorData -->
+    <Desc>BossShip</Desc>
+    <!-- RsDamageableData -->
+    <Health>2500</Health>
+    <!-- RsShipData -->
+    <InitialUpgrade>ShipUpgradeUnity</InitialUpgrade>
+    <ShipType>Straight</ShipType>
+    <Speed>4</Speed>
+    <Points>1000</Points>
+    
+  </Asset>
+</XnaContent>
