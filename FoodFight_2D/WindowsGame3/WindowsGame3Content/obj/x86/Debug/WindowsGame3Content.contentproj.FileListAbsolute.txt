@@ -1,2 +1,0 @@
-C:\Users\Ratslayer\Documents\Visual Studio 2010\Projects\WindowsGame3\WindowsGame3\WindowsGame3Content\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Ratslayer\Documents\Visual Studio 2010\Projects\WindowsGame3\WindowsGame3\WindowsGame3Content\obj\x86\Debug\sound.xml
