@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{CB7ADC1F-391D-458F-B296-86EAD6BACA67}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Mongoose.Droid</RootNamespace>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>Mongoose.Droid</AssemblyName>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.21.0.3.0\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Refractored.Xam.Settings.Abstractions">
+      <HintPath>..\packages\Xam.Plugins.Settings.1.5.0\lib\MonoAndroid10\Refractored.Xam.Settings.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Refractored.Xam.Settings">
+      <HintPath>..\packages\Xam.Plugins.Settings.1.5.0\lib\MonoAndroid10\Refractored.Xam.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.NUnitLite" />
+    <Reference Include="Estimotes.Xamarin.Android">
+      <HintPath>..\packages\Estimotes-Xamarin.1.0.20141223.0\lib\MonoAndroid43\Estimotes.Xamarin.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.21.0.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.MediaRouter">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.MediaRouter.21.0.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net45+win8+wpa81\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net45+win8+wpa81\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Google.Apis.Core">
+      <HintPath>..\packages\Google.Apis.Core.1.9.1\lib\portable-net40+sl50+win+wpa81+wp80\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Zlib.Portable">
+      <HintPath>..\packages\Zlib.Portable.1.10.0\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis">
+      <HintPath>..\packages\Google.Apis.1.9.1\lib\portable-net40+sl50+win+wpa81+wp80\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Wikitude.SDK">
+      <HintPath>..\Android\Wikitude.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Json" />
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\monoandroid\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\monoandroid\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="FormsViewGroup">
+      <HintPath>..\packages\Xamarin.Forms.1.4.1.6349\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.1.4.1.6349\lib\MonoAndroid10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.Android">
+      <HintPath>..\packages\Xamarin.Forms.1.4.1.6349\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.1.4.1.6349\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Android\Wikitude.Android.csproj">
+      <Project>{6E796D12-38B8-4183-A526-3AFB6A95AD3F}</Project>
+      <Name>Wikitude.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mongoose\Mongoose.csproj">
+      <Project>{9CC7D03D-3991-49F7-BCE2-7E30C8545EEB}</Project>
+      <Name>Mongoose</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="GooglePlayServicesLib">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.22.0.0.2\lib\MonoAndroid41\GooglePlayServicesLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTest\SettingsTests.cs" />
+    <Compile Include="UnitTestActivity.cs" />
+    <Compile Include="UnitTest\NotificationTest.cs" />
+    <Compile Include="Resources\MultiSelectSpinner.cs" />
+    <Compile Include="BootCompletedReceiver.cs" />
+    <Compile Include="UnitTest\FileAccessorTest.cs" />
+    <Compile Include="UnitTest\FilterRetrievalTest.cs" />
+    <Compile Include="Resources\ArchitectViewWrapper.cs" />
+    <Compile Include="UnitTest\ARTest.cs" />
+    <Compile Include="Resources\DropdownSpinner.cs" />
+    <Compile Include="Android_Technical_Services_Layer\NotificationCreator.cs" />
+    <Compile Include="Android_Technical_Services_Layer\NotificationTracker.cs" />
+    <Compile Include="Android_Application_Layer\Location\LocationDroid.cs" />
+    <Compile Include="Android_Application_Layer\Location\LocationMonitorDroid.cs" />
+    <Compile Include="FavoritesReceiver.cs" />
+    <Compile Include="UnitTest\EventListPopulationTest.cs" />
+    <Compile Include="AlertDialogFragment.cs" />
+    <Compile Include="Resources\renderers\ARViewRenderer.cs" />
+    <Compile Include="Resources\renderers\DropdownMultiSelectViewRenderer.cs" />
+    <Compile Include="Resources\renderers\DropdownViewRenderer.cs" />
+    <Compile Include="Data_Storage_Layer\FileAccessor.cs" />
+    <Compile Include="Resources\LocationViewDroid.cs" />
+    <Compile Include="Resources\renderers\LocationViewRenderer.cs" />
+    <Compile Include="BackgroundService.cs" />
+    <Compile Include="Resources\renderers\CustomSwitchRenderer.cs" />
+    <Compile Include="Resources\renderers\BeaconViewRenderer.cs" />
+    <Compile Include="Resources\BeaconDrawView.cs" />
+    <Compile Include="Android_Beacon\BeaconActivity.cs" />
+    <Compile Include="Android_Beacon\BeaconDistance.cs" />
+    <Compile Include="Android_Beacon\BeaconDistanceActivity.cs" />
+    <Compile Include="Android_Beacon\BeaconsFinder.cs" />
+    <Compile Include="Android_Beacon\EX_FindAllBeacons.cs" />
+    <Compile Include="Android_Application_Layer\Location\GoogleMonitor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config" />
+    <None Include="Properties\_SettingsStarted.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\layout\" />
+    <Folder Include="Resources\values\" />
+    <Folder Include="UnitTest\" />
+    <Folder Include="Resources\values-fr\" />
+    <Folder Include="Android_Technical_Services_Layer\" />
+    <Folder Include="Android_Application_Layer\" />
+    <Folder Include="Assets\poi_js\" />
+    <Folder Include="Resources\renderers\" />
+    <Folder Include="Data_Storage_Layer\" />
+    <Folder Include="Resources\values-v21\" />
+    <Folder Include="Resources\menu\" />
+    <Folder Include="Android_Beacon\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable\artIMG.png" />
+    <AndroidResource Include="Resources\layout\notify_demo.axml" />
+    <AndroidResource Include="Resources\drawable\cameraIMG.png" />
+    <AndroidResource Include="Resources\drawable\cogIMG.png" />
+    <AndroidResource Include="Resources\drawable\eventIMG.png" />
+    <AndroidResource Include="Resources\drawable\flagIMG.png" />
+    <AndroidResource Include="Resources\drawable\heartIMG.png" />
+    <AndroidResource Include="Resources\values\strings.xml" />
+    <AndroidResource Include="Resources\values-fr\strings.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\values-v21\styles.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\drawable\tab_bar_background.xml" />
+    <AndroidResource Include="Resources\drawable\tab_bar_background_selected.xml" />
+    <AndroidResource Include="Resources\drawable\checkbox.xml" />
+    <AndroidResource Include="Resources\drawable\round_checkbox_selected.png" />
+    <AndroidResource Include="Resources\drawable\round_checkbox_unselected.png" />
+    <AndroidResource Include="Resources\menu\buildings_dropdown_menu.xml" />
+    <AndroidResource Include="Resources\menu\options_menu.xml" />
+    <AndroidResource Include="Resources\drawable\new_tag.png" />
+    <AndroidResource Include="Resources\drawable\right_caret.png" />
+    <AndroidResource Include="Resources\drawable\warning_icon.png" />
+    <AndroidResource Include="Resources\drawable\en_tag.png" />
+    <AndroidResource Include="Resources\drawable\fr_tag.png" />
+    <AndroidResource Include="Resources\drawable\aboutIMG.png" />
+    <AndroidResource Include="Resources\drawable\bg_distance.png" />
+    <AndroidResource Include="Resources\layout\distanceBackground.axml" />
+    <AndroidResource Include="Resources\drawable\dot.png" />
+    <AndroidResource Include="Resources\drawable\eventIMG_2.png" />
+    <AndroidResource Include="Resources\drawable\maroon_book_64.png" />
+    <AndroidResource Include="Resources\drawable\golden_book_64.png" />
+    <AndroidResource Include="Resources\drawable\golden_book_rounded_64.png" />
+    <AndroidResource Include="Resources\drawable\book_white_64.png" />
+    <AndroidResource Include="Resources\layout\main.axml" />
+    <AndroidResource Include="Resources\layout\device_item.axml" />
+    <AndroidResource Include="Resources\drawable\beacon_gray.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\dot.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Import Project="..\packages\Xamarin.Forms.1.4.1.6349\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.4.1.6349\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ade.js" />
+    <AndroidAsset Include="Assets\poi_js\index.html" />
+    <AndroidAsset Include="Assets\poi_js\assets\indi.png" />
+    <AndroidAsset Include="Assets\poi_js\assets\marker_idle.png" />
+    <AndroidAsset Include="Assets\poi_js\assets\marker_selected.png" />
+    <AndroidAsset Include="Assets\poi_js\assets\radar_bg.png" />
+    <AndroidAsset Include="Assets\poi_js\assets\radar_north.png" />
+    <AndroidAsset Include="Assets\poi_js\css\poi-radar.css" />
+    <AndroidAsset Include="Assets\poi_js\jquery\jquery-1.9.1.min.js" />
+    <AndroidAsset Include="Assets\poi_js\jquery\jquery-mobile-transparent-ui-overlay.css" />
+    <AndroidAsset Include="Assets\poi_js\jquery\jquery.mobile-1.3.2.min.css" />
+    <AndroidAsset Include="Assets\poi_js\jquery\jquery.mobile-1.3.2.min.js" />
+    <AndroidAsset Include="Assets\poi_js\jquery\images\ajax-loader.gif" />
+    <AndroidAsset Include="Assets\poi_js\jquery\images\icons-18-black.png" />
+    <AndroidAsset Include="Assets\poi_js\jquery\images\icons-18-white.png" />
+    <AndroidAsset Include="Assets\poi_js\jquery\images\icons-36-black.png" />
+    <AndroidAsset Include="Assets\poi_js\jquery\images\icons-36-white.png" />
+    <AndroidAsset Include="Assets\poi_js\js\ade.js" />
+    <AndroidAsset Include="Assets\poi_js\js\marker.js" />
+    <AndroidAsset Include="Assets\poi_js\js\nativePoiDetail.js" />
+    <AndroidAsset Include="Assets\poi_js\js\radar.js" />
+    <AndroidAsset Include="Assets\poi_js\assets\art_icon_selected.png" />
+    <AndroidAsset Include="Assets\poi_js\assets\building_icon_idle.png" />
+    <AndroidAsset Include="Assets\poi_js\assets\building_icon_selected.png" />
+    <AndroidAsset Include="Assets\poi_js\assets\poi_icon_idle.png" />
+    <AndroidAsset Include="Assets\poi_js\assets\poi_icon_selected.png" />
+    <AndroidAsset Include="Assets\poi_js\js\strings_en.js" />
+    <AndroidAsset Include="Assets\poi_js\js\strings_fr.js" />
+    <AndroidAsset Include="Assets\poi_js\js\language_manager.js" />
+    <AndroidAsset Include="Assets\poi_js\index_fr.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TestJSONEventData.txt" />
+  </ItemGroup>
+</Project>

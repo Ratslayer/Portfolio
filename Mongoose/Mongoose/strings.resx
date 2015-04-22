@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+		
+<!-- UI strings !-->
+	<data name="OK">
+		<value>OK</value>
+	</data>
+	<data name="Cancel">
+		<value>Cancel</value>
+	</data>
+	<data name="Warning">
+		<value>Warning</value>
+	</data>
+	<data name="WasTapped">
+		<value> was tapped.</value>
+	</data>
+
+<!-- Label strings !-->
+	<data name="ArtEvent">
+		<value>ArtEvent Guide</value>
+	</data>
+	<data name="Events">
+		<value>Events</value>
+	</data>
+	<data name="Ongoing">
+		<value>ONGOING</value>
+	</data>
+	<data name="Onetime">
+		<value>ONE-TIME</value>
+	</data>
+	<data name="Arts">
+		<value>Arts</value>
+	</data>
+	<data name="Explore">
+		<value>Explore</value>
+	</data>
+	<data name="Favorites">
+		<value>Favorites</value>
+	</data>
+	<data name="Settings">
+		<value>Settings</value>
+	</data>
+	<data name="Visualise">
+		<value>Visualise</value>
+	</data>
+
+	<data name="ResetSettings">
+		<value>Reset to default settings</value>
+	</data>
+	<data name="ResetSettingsWarning">
+		<value>Are you sure you want to reset to settings to their default values?</value>
+	</data>
+
+<!-- Language strings -->
+	<data name="Language">
+		<value>Language</value>
+	</data>
+	<data name="English">
+		<value>English</value>
+	</data>
+	<data name="French">
+		<value>French</value>
+	</data>
+	<data name="LanguageAvailability">
+		<value>Some content may not be displayed in your preferred language. Availability depends solely on the event publisher.</value>
+	</data>
+
+<!-- Filters strings -->
+	<data name="Filters">
+		<value>Filters</value>
+	</data>
+	<data name="FiltersResetToDefault">
+		<value>Reset to default filters</value>
+	</data>
+	<data name="FiltersResetWarning">
+		<value>Are you sure you want to reset the filters to their default settings?</value>
+	</data>
+
+	<!-- Category -->
+	<data name="FiltersSettingsCategoryPrompt">
+		<value>Show me events from these categories</value>
+	</data>
+	<data name="Categories">
+		<value>Categories</value>
+	</data>
+	<data name="CategoryAll">
+		<value>All Categories</value>
+	</data>
+	<data name="CategoryArtsAndCulture">
+		<value>Arts and Culture</value>
+	</data>
+	<data name="CategoryConferencesAndLectures">
+		<value>Conferences and Lectures</value>
+	</data>
+	<data name="CategoryExaminations">
+		<value>Examinations</value>
+	</data>
+	<data name="CategoryReligiousAndSpiritual">
+		<value>Religious and Spiritual</value>
+	</data>
+	<data name="CategorySocialEvents">
+		<value>Social Events</value>
+	</data>
+	<data name="CategorySportsAndWellness">
+		<value>Sports and Wellness</value>
+	</data>
+	<data name="CategoryWorkshopsSeminars">
+		<value>Workshops And Seminars</value>
+	</data>
+	<data name="CategoryFundraisers">
+		<value>Fundraisers</value>
+	</data>
+	<data name="CategoryInformationOrientation">
+		<value>Information And Orientation</value>
+	</data>
+	<data name="CategoryOtherEvents">
+		<value>Other Events</value>
+	</data>
+
+	<!-- Audience -->
+	<data name="FiltersSettingsAudiencePrompt">
+		<value>Show me events from these audiences</value>
+	</data>
+	<data name="Audience">
+		<value>Audience</value>
+	</data>
+	<data name="AudienceAll">
+		<value>All Audiences</value>
+	</data>
+	<data name="AudienceAlumni">
+		<value>Alumni</value>
+	</data>
+	<data name="AudienceStaff">
+		<value>Staff</value>
+	</data>
+	<data name="AudienceFaculty">
+		<value>Faculty</value>
+	</data>
+	<data name="AudienceManagers">
+		<value>Managers</value>
+	</data>
+	<data name="AudienceStudents">
+		<value>Students</value>
+	</data>
+	<data name="AudienceParents">
+		<value>Parents</value>
+	</data>
+	<data name="AudienceFutureStudents">
+		<value>Future Students</value>
+	</data>
+
+	<!-- Unit -->
+	<data name="FiltersSettingsUnitPrompt">
+		<value>Show me events from these units</value>
+	</data>
+	<data name="Unit">
+		<value>Unit</value>
+	</data>
+	<data name="UnitAll">
+		<value>All Units</value>
+	</data>
+	<data name="UnitENCS">
+		<value>ENCS</value>
+	</data>
+	<data name="UnitArtsAndScience">
+		<value>Arts And Science</value>
+	</data>
+	<data name="UnitOffices">
+		<value>Offices</value>
+	</data>
+	<data name="UnitMain">
+		<value>Main</value>
+	</data>
+	<data name="UnitBusiness">
+		<value>John Molson School of Business</value>
+	</data>
+	<data name="UnitFineArts">
+		<value>Fine Arts</value>
+	</data>
+
+	<!-- Time Range -->
+	<data name="TimeRangeFilterHeader">
+		<value>Show me events within the next </value>
+	</data>
+		
+<!-- Notification strings -->
+	<data name="Notifications">
+		<value>Notifications</value>
+	</data>
+	<data name="NotifyEvents">
+		<value>Notify me of events</value>
+	</data>
+	<data name="NotifyEventsDetails">
+		<value>Event notifications use your device's GPS</value>
+	</data>
+	<data name="NotifyArts">
+		<value>Notify me when I'm near public arts</value>
+	</data>
+	<data name="NotifyArtsDetails">
+		<value>Public art notifications use your device's Bluetooth</value>
+	</data>
+	<data name="NotifyDetails">
+		<value>Notify me with detailed text</value>
+	</data>
+	<data name="NotifyDetailsDetails">
+		<value>Turn text options off for shorter notifications</value>
+	</data>
+	<data name="NotifyEventsShort">
+		<value>Notify events</value>
+	</data>
+	<data name="NotifyArtsShort">
+		<value>Notify public arts</value>
+	</data>
+	<data name="NotifyDetailsShort">
+		<value>Notify with details</value>
+	</data>
+	<data name="NotifyHour">
+		<value>Next Hour</value>
+	</data>
+	<data name="NotifyThreeHours">
+		<value>Next 3 Hours</value>
+	</data>
+	<data name="NotifySixHours">
+		<value>Next 6 Hours</value>
+	</data>
+	<data name="NotifyDay">
+		<value>Next Day</value>
+	</data>
+	<data name="NotifySevenDays">
+		<value>Next 7 Days</value>
+	</data>
+	<data name="NotifyThirtyDays">
+		<value>Next 30 Days</value>
+	</data>
+
+<!-- Favorites strings -->
+	<data name="Favorites">
+		<value>Favorites</value>
+	</data>
+	<data name="FavoritesExpireDate">
+		<value>Automatically clear my Favorites every</value>
+	</data>
+	<data name="FavoritesClearDay">
+		<value>Day</value>
+	</data>
+	<data name="FavoritesClearWeek">
+		<value>Week</value>
+	</data>
+	<data name="FavoritesClearTwoWeeks">
+		<value>Two Weeks</value>
+	</data>
+	<data name="FavoritesClearMonth">
+		<value>Month</value>
+	</data>
+
+<!-- Performance strings -->
+	<data name="Performance">
+		<value>Performance</value>
+	</data>
+	<data name="PerformanceGPS">
+		<value>Decrease GPS accuracy for better battery performance</value>
+	</data>
+	<data name="PerformanceGPSDetails">
+		<value>The application may have more difficulty finding your current location</value>
+	</data>
+	<data name="PerformanceBluetooth">
+		<value>Decrease Bluetooth detection rate for better battery performance</value>
+	</data>
+	<data name="PerformanceBluetoothDetails">
+		<value>The application may have more difficulty detecting public art in your vicinity</value>
+	</data>
+
+<!-- Art strings -->
+	<data name="ArtInfoPageTitle">
+		<value>Art Info</value>
+	</data>
+	<data name="BookDisplayTitle">
+		<value>New Arrivals In The Library</value>
+	</data>
+	<data name="ArtDisplayTitle">
+		<value>Library Art Display</value>
+	</data>
+	<data name="CourseReservesRoomTitle">
+		<value>Course Reserves Room</value>
+	</data>
+	<data name="Visit">
+		<value>Visit</value>
+	</data>
+	<data name="Location">
+		<value>Location</value>
+	</data>
+	<data name="Description">
+		<value>Description</value>
+	</data>
+	<data name="ArtDisplayInformation">
+		<value>Library art exhibition information</value>
+	</data>
+	<data name="BookDisplayInformation">
+		<value>New acquisitions at the Concordia Library</value>
+	</data>
+	<data name="CourseReservesRoomInformation">
+		<value>Find out what is on reserve for your courses</value>
+	</data>
+
+<!-- Event strings -->
+	<data name="EventInfoPageTitle">
+		<value>Event Info</value>
+	</data>
+	<data name="NoEvents">
+		<value>There are no events for your current building and selected filter(s). Please choose another building or change the filter settings.</value>
+	</data>
+	<data name="NoLocationForEventList">
+		<value>Current building could not be determined. Please make sure that your GPS is turned on or choose a building manually.</value>
+	</data>
+	<data name="Title">
+		<value>Title</value>
+	</data>
+	<data name="Date">
+		<value>Date</value>
+	</data>
+	<data name="StartTime">
+		<value>Start Time</value>
+	</data>
+	<data name="EndTime">
+		<value>End Time</value>
+	</data>
+	<data name="Campus">
+		<value>Campus</value>
+	</data>
+	<data name="Building">
+		<value>Building</value>
+	</data>
+	<data name="Room">
+		<value>Room</value>
+	</data>
+	<data name="Address">
+		<value>Address</value>
+	</data>
+	<data name="Audience">
+		<value>Audience</value>
+	</data>
+	<data name="VisitWebsite">
+		<value>Visit Website</value>
+	</data>
+	<data name="Website">
+		<value>Website</value>
+	</data>
+	<data name="URL">
+		<value>URL</value>
+	</data>
+	<data name="TodayAt">
+		<value>Today at </value>
+	</data>
+	<data name="At">
+		<value> at </value>
+	</data>
+
+<!-- Location strings -->
+	<data name="Home">
+		<value>Home</value>
+	</data>
+	<data name="Unknown">
+		<value>Unknown</value>
+	</data>
+	<data name="NoAddress">
+		<value>No address</value>
+	</data>
+	<data name="Current">
+		<value>Current</value>
+	</data>
+	<data name="SelectBuilding">
+		<value>Select building</value>
+	</data>
+	<data name="Time">
+		<value>Time</value>
+	</data>
+
+<!-- About strings -->
+	<data name="About">
+		<value>About</value>
+	</data>
+	<data name="Application">
+		<value>Application Information</value>
+	</data>
+	<data name="Help">
+		<value>Help</value>
+	</data>
+	<data name="Contact">
+		<value>Contact us</value>
+	</data>
+	<data name="DebugBeacon">
+		<value>Debug Beacon</value>
+	</data>
+	<data name="DebugLocation">
+		<value>Debug Location</value>
+	</data>
+
+
+<!-- Favorite strings -->
+	<data name="NoFavorites">
+		<value>There are currently no events in your Favorites list</value>
+	</data>
+	<data name="AddToFavorites">
+		<value>Add to Favorites</value>
+	</data>
+	<data name="RemoveFromFavoritesTitle">
+		<value>Remove from Favorites</value>
+	</data>
+	<data name="RemoveFromFavoritesBody">
+		<value>Are you sure you want to remove this item from Favorites?</value>
+	</data>
+	<data name="RemoveFromFavoritesFailureTitle">
+		<value>Already Removed Event</value>
+	</data>
+	<data name="RemoveFromFavoritesFailureBody">
+		<value>Event has already been removed from Favorites</value>
+	</data>
+	<data name="CurrentlyExploring">
+		<value>Currently Exploring:</value>
+	</data>
+	<data name="RemoveAllFavoritesTitle">
+		<value>Remove All Favorites</value>
+	</data>
+	<data name="RemoveAllFavoritesBody">
+		<value>Are you sure you want to remove all your Favorites?</value>
+	</data>
+</root>
+	

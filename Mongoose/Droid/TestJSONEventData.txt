@@ -1,0 +1,58 @@
+﻿[  
+   {  
+      "title":"Test Event 1",
+      "description":"First Event test object.",
+      "startdate":"2015/1/1",
+      "starttime":"16:00",
+      "enddate":"2015/5/30",
+      "endtime":"17:00",
+      "allday":"False",
+      "campus":"SGW",
+      "building":"EV",
+      "venue":"",
+      "room":"EV-3.719",
+      "offlocation":"",
+      "offcivic":"",
+      "offlink":"",
+      "category":[  
+         "test:testing"
+      ],
+      "audiences":[  
+         "event-audiences:all"
+      ],
+      "units":[  
+         "units:finearts",
+         "units:finearts/art_history",
+         "units:finearts/jarislowsky"
+      ],
+      "url":"www.google.com"
+   },
+   {  
+      "title":"Test Event 2",
+      "description":"Second Event test object.",
+      "startdate":"2015/2/21",
+      "starttime":"13:00",
+      "enddate":"2015/3/1",
+      "endtime":"23:30",
+      "allday":"True",
+      "campus":"SGW",
+      "building":"EV",
+      "venue":"",
+      "room":"EV-1.605",
+      "offlocation":"",
+      "offcivic":"",
+      "offlink":"",
+      "category":[  
+         "test:testing"
+      ],
+      "audiences":[  
+         "event-audiences:all"
+      ],
+      "units":[  
+         "units:finearts",
+         "units:finearts/jarislowsky",
+         "units:finearts/art_history"
+      ],
+      "url":"www.example.com"
+   }
+]

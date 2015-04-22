@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<resources>
+    <!---GLobal colors -->
+    <color name="concordiaGold">#EDCC47</color>
+    <color name="concordiaMaroon">#AD3C36</color>
+    <color name="darkGray">#4F4F4F</color>
+    <color name="lightGray">#EBEBEB</color>
+    <color name="background">#FFFFFF</color>
+    <color name="transparent">#000000</color>
+</resources>

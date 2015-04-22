@@ -1,6 +1,0 @@
-C:\Users\Ratslayer\Documents\Visual Studio 2010\Projects\red-stream\RedStreamData\bin\x86\Optimized\RedStreamData.dll
-C:\Users\Ratslayer\Documents\Visual Studio 2010\Projects\red-stream\RedStreamData\bin\x86\Optimized\RedStreamData.pdb
-C:\Users\Ratslayer\Documents\Visual Studio 2010\Projects\red-stream\RedStreamData\obj\x86\Optimized\ResolveAssemblyReference.cache
-C:\Users\Ratslayer\Documents\Visual Studio 2010\Projects\red-stream\RedStreamData\obj\x86\Optimized\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\Ratslayer\Documents\Visual Studio 2010\Projects\red-stream\RedStreamData\obj\x86\Optimized\RedStreamData.dll
-C:\Users\Ratslayer\Documents\Visual Studio 2010\Projects\red-stream\RedStreamData\obj\x86\Optimized\RedStreamData.pdb

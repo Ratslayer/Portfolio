@@ -1,2 +1,0 @@
-C:\Users\Ratslayer\Documents\Visual Studio 2010\Projects\red-stream\RedStream\RedStreamContent\obj\x86\Optimized\ResolveAssemblyReference.cache
-C:\Users\Ratslayer\Documents\Visual Studio 2010\Projects\red-stream\RedStream\RedStreamContent\obj\x86\Optimized\Sound\AudioEngine.xml

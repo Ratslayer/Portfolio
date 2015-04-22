@@ -1,5 +1,0 @@
-C:\Users\Ratslayer\Documents\Visual Studio 2010\Projects\red-stream\RedStreamContentPipeline\RedStreamContentPipeline\bin\x86\Debug\RedStreamContentPipeline.dll
-C:\Users\Ratslayer\Documents\Visual Studio 2010\Projects\red-stream\RedStreamContentPipeline\RedStreamContentPipeline\bin\x86\Debug\RedStreamContentPipeline.pdb
-C:\Users\Ratslayer\Documents\Visual Studio 2010\Projects\red-stream\RedStreamContentPipeline\RedStreamContentPipeline\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Ratslayer\Documents\Visual Studio 2010\Projects\red-stream\RedStreamContentPipeline\RedStreamContentPipeline\obj\x86\Debug\RedStreamContentPipeline.dll
-C:\Users\Ratslayer\Documents\Visual Studio 2010\Projects\red-stream\RedStreamContentPipeline\RedStreamContentPipeline\obj\x86\Debug\RedStreamContentPipeline.pdb

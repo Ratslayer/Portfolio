@@ -1,0 +1,39 @@
+﻿using System;
+
+namespace Mongoose
+{
+	public class Event : POI
+	{
+		string campus { get; set;}
+		string building { get; set;}
+		string cost { get; set;}
+		string speakers { get; set;}
+		string organization { get; set;}
+		string organizer { get; set;}
+		string website { get; set;}
+		string contact { get; set;}
+		string category { get; set;}
+
+		// Don't think we need these in the constructor if we're going to populate object fields with json data
+		public Event(string campus, string building/*, string cost, string speakers,string organization, string organizer, string website, string contact, string category*/)
+			: base(campus,building)
+		{
+//			this.cost = cost;
+//			this.speakers = speakers;
+//			this.organization = organization;
+//			this.organizer = organizer;
+//			this.website = website;
+//			this.contact = contact;
+//			this.category = category;
+		}
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> development
+	}
+}
+

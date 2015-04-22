@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<XnaContent>
-  <Asset Type="RedStream.RsPlanetData">
-    <Desc>Planet</Desc>
-    <Health>4000</Health>
-    <AngVel>-10 10 -10</AngVel>
-  </Asset>
-</XnaContent>

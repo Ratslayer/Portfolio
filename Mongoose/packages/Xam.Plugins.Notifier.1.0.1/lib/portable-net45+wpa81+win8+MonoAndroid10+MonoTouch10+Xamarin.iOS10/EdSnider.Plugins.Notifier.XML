@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EdSnider.Plugins.Notifier</name>
+    </assembly>
+    <members>
+        <member name="P:EdSnider.Plugins.Notifier.Current">
+            <summary>
+            Gets the current platform specific INotifierService implementation.
+            </summary>
+        </member>
+    </members>
+</doc>

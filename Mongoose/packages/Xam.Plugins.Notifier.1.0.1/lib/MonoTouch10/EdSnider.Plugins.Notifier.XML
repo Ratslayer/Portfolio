@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EdSnider.Plugins.Notifier</name>
+    </assembly>
+    <members>
+        <member name="P:EdSnider.Plugins.Notifier.Current">
+            <summary>
+            Gets the current platform specific INotifierService implementation.
+            </summary>
+        </member>
+        <member name="T:EdSnider.Plugins.NotifierService">
+            <summary>
+            Notifier implementation for iOS (iPad and iPhone)
+            </summary>
+        </member>
+        <member name="M:EdSnider.Plugins.NotifierService.Show(System.String,System.String)">
+            <summary>
+            Show a local notification in the Notification Center.
+            </summary>
+            <param name="title">Title of the notification</param>
+            <param name="body">Body or description of the notification</param>
+        </member>
+    </members>
+</doc>

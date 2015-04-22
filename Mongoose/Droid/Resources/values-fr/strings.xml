@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+<!-- French !-->
+
+<!-- iBeacon strings !-->
+<string name="BeaconEnter">Arrivé en proximité d\'un iBeacon</string>
+<string name="BeaconExit">Sortie de la zone d\'iBeacon</string>
+<string name="BeaconTitle">Test d\'iBeacon</string>
+<string name="BeaconNotification">Avertissement iBeacon</string>
+<string name="YoureDistance">Vous êtes à ~</string>
+<string name="FromCourseReserve">m du iBeacon de la salle de manuels sur réserve</string>
+<string name="FromNewBooks">m du iBeacon des livres nouvellement arrivés à la bibliotèque</string>
+<string name="FromArtDisplay">m du iBeacon de l\'exposition d\'art de la bibliotèque</string>
+<string name="FromUnknown">Vous avez trouver un iBeacon inconnu!</string>
+<string name="ExitingCourseReserve">Vous vous êtes éloignex du iBeacon de la salle de manuels sur réserve</string>
+<string name="ExitingNewBooks">Vous vous êtes éloignex du iBeacon des livres nouvellement arrivés à la bibliotèque</string>
+<string name="ExitingArtDisplay">Vous vous êtes éloignex du iBeacon de l\'exposition d\'art de la bibliotèque</string>
+<string name="ExitingUnknown">Vous vous êtes éloignex du iBeacon inconnu!</string>
+
+<!-- Message strings !-->
+<string name="AlertDialogTitle">Autorisations d\'application</string>
+<string name="AlertDialog">Cette application nécessite Bluetooth et GPS d\'être activés pour être fonctionnel.</string>
+
+<!-- Notification strings !-->
+<string name="NewEvents">Nouveaux événements</string>
+<string name="ViewMore">Tapper pour plus de détails</string>
+<string name="LocationEvents">Événements localisés</string>
+<string name="VisitForMore">Visiter l\'application pour plus d\'événmement</string>
+<string name="LongTextMessage">Démonstration des notifications.\n Et du cœur à tes lèvre je deviens un casse-tête. Ton rire me crie de te lâcher. </string>
+<string name="SummaryTextMessage">Beaucoups de mots pour dire qu\'il y a des nouveaux événements</string>
+<string name="ThereAreNewEvents">Il y a des nouveaux événements</string>
+<string name="Entertainment">ideo entertainment?</string>
+<string name="ThereAre">Il y a</string>
+<string name="NewEvents"> nouveaux événements</string>
+<string name="ConcordiaNotification">Avertissement Concordia</string>
+
+<!-- Augmented Reality !-->
+<string name="ArMessage">La réalité augmentée pourrait ne pas <br /> être précis si utilisé à intérieur</string>
+
+<!-- Location strings !-->
+<string name="NoAddress">Aucune adresse retrouvé!</string>
+<string name="Building">Édifice</string>
+
+<!--- Error strings !-->
+<string name="Error">ERReuR</string>
+<string name="ErrorLocationNull">Emplacement null: impossible de déterminer l\'addresse courante.</string>
+<string name="ErrorNoAdressReceived">Aucune address reçu par le geocodeur: impossible de déterminer l\'addresse courante.</string>
+
+</resources>

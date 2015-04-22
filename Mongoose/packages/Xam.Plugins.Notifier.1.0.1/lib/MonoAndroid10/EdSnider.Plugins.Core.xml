@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EdSnider.Plugins.Core</name>
+    </assembly>
+    <members>
+        <member name="M:EdSnider.Plugins.Core.INotifierService.Show(System.String,System.String)">
+            <summary>
+            Show a local notification
+            </summary>
+            <param name="title">Title of the notification</param>
+            <param name="body">Body or description of the notification</param>
+        </member>
+    </members>
+</doc>

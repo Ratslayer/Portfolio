@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- the theme applied to the application -->
+    <style name="MyTheme" 
+    		parent="android:Theme.Holo.Light">
+    	<!-- General styles -->
+    	<item name="android:colorPrimary">@color/concordiaMaroon</item>
+        <item name="android:colorAccent">@color/concordiaMaroon</item>
+        <item name="android:textColorPrimary">@color/concordiaGold</item>
+        <item name="android:colorControlActivated">@color/concordiaMaroon</item>
+        <item name="android:colorEdgeEffect">@color/concordiaMaroon</item>
+   	    <item name="android:colorControlHighlight">@color/concordiaMaroon</item>
+
+   	    <item name="android:colorPressedHighlight">@color/lightGray</item>
+        <item name="android:colorLongPressedHighlight">@color/lightGray</item>
+        <item name="android:colorFocusedHighlight">@color/lightGray</item>
+        <item name="android:colorMultiSelectHighlight">@color/lightGray</item>
+        <item name="android:colorActivatedHighlight">@color/lightGray</item>
+ 
+ 		<item name="android:windowDisablePreview">true</item>
+   		
+   		<!-- Specific styles -->
+
+   		<!-- ActionBar Tab -->
+   	   	<item name="android:actionBarTabStyle">@style/MyActionBarTab</item>
+   		<item name="android:actionBarTabBarStyle">@style/MyActionBarTabBar</item>
+   		<item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>
+  
+		<!-- Checkbox -->
+		<item name="android:checkboxStyle">@style/MyCheckbox</item>
+
+    </style>
+
+     <!-- Actionbar tab text styles -->
+    <style name="MyActionBarTabText"
+           parent="@android:style/Widget.Holo.ActionBar.TabText">
+        <item name="android:textColor">@color/darkGray</item>
+		<item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Actionbar tab styles -->
+    <style name="MyActionBarTab"
+    	parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_bar_background</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Actionbar tab bar styles -->
+    <style name="MyActionBarTabBar"
+    	parent="@android:style/Widget.Holo.ActionBar.TabBar">
+    	<item name="android:background">@color/background</item>
+        <item name="android:showDividers">middle</item>
+    </style>
+
+    <!-- Checkbox styles -->
+    <style name="MyCheckbox"
+    	parent="@android:style/Widget.CompoundButton.CheckBox">
+    	<item name="android:button">@drawable/checkbox</item>
+    </style>
+</resources>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+<!-- English !-->
+
+<!-- iBeacon strings !-->
+<string name="BeaconEnter">Entered iBeacon Range</string>
+<string name="BeaconExit">Exited iBeacon Range</string>
+<string name="BeaconTitle">iBeacon Test</string>
+<string name="BeaconNotification">Beacon Notification</string>
+<string name="YoureDistance">You\'re ~</string>
+<string name="FromCourseReserve">m from the Course Reserve beacon</string>
+<string name="FromNewBooks">m from the New Books beacon</string>
+<string name="FromArtDisplay">m from the Art Display beacon</string>
+<string name="FromUnknown">You\'ve found an unknown beacon!</string>
+<string name="ExitingCourseReserve">You\'re exiting the Course Reserve beacon</string>
+<string name="ExitingNewBooks">You\'re exiting the New Books beacon</string>
+<string name="ExitingArtDisplay">You\'re exiting the Art Display beacon</string>
+<string name="ExitingUnknown">You\'re exiting the Unknown beacon</string>
+
+<!-- Message strings !-->
+<string name="AlertDialogTitle">Application Permissions</string>
+<string name="AlertDialog">This application requires Bluetooth and GPS to be enabled to be fully functional.</string>
+
+<!-- Notification strings !-->
+<string name="NewEvents">New events</string>
+<string name="ViewMore">Click to view more</string>
+<string name="LocationEvents">Location Events</string>
+<string name="VisitForMore">Visit the app for more events</string>
+<string name="LongTextMessage">This is a demo notification\n "Lorem ipsum dolor sit amet, consectetur adipiscing elit</string>
+<string name="SummaryTextMessage">Long story short new events</string>
+<string name="ThereAreNewEvents">There are new events</string>
+<string name="Entertainment">ideo entertainment?</string>
+<string name="ThereAre">There are</string>
+<string name="NewEvents">New events</string>
+<string name="ConcordiaNotification">Concordia notifications</string>
+
+<!-- Augmented Reality !-->
+<string name="ArMessage">The Augmented reality might not <br />  be accurate if it is used indoor</string>
+
+<!-- Filter strings -->
+<string name="FilterOKPrompt">OK</string>
+
+<!-- Location strings !-->
+<string name="NoAddress">No address found!</string>
+<string name="Building">Building</string>
+
+<!--- Error strings !-->
+<string name="Error">ERROR</string>
+<string name="ErrorLocationNull">Location null: can\'t determine the current address.</string>
+<string name="ErrorNoAdressReceived">No address received from geocoder: can\'t determine current address.</string>
+
+</resources>
