@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<XnaContent>
-  <Asset Type="RedStream.RsShieldData">
-    <Desc>Shield</Desc>
-    <Health>1000</Health>
-    <RechargeTime>3</RechargeTime>
-    <RechargeRate>100</RechargeRate>
-  </Asset>
-</XnaContent>
